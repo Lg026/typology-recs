@@ -1,0 +1,136 @@
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.intro {
+    margin-top: 5rem;
+}
+
+.button {
+    background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+    background-size: 1400% 1400%;
+    animation: rainbow 10s ease infinite;
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    width: 12rem;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+@media (min-width: 2560px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .button {
+        width: 18rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 2559px ){
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        width: 12rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .intro {
+        margin-top: 3rem;
+    }
+
+    .button {
+        width: 10rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .button {
+        font-size: 0.7rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 470px) {
+    h2 {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 0.7rem;
+        margin-top: 2rem;
+        width: 8rem;
+    }
+}
+
+@media (max-width: 390px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        font-size: 0.6rem;
+        margin-top: 2rem;
+        width: 6rem;
+    }
+}
+
+@media (max-width: 345px) {
+    h1 {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        }
+    
+    h2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        }
+}
