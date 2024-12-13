@@ -1,6 +1,6 @@
 {
   "name": "typorecs",
-  "homepage":  "https://lg026.github.io/TypoRecs/",
+  "homepage": "https://lg026.github.io/TypoRecs/",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
